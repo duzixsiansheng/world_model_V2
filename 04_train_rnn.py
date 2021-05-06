@@ -117,7 +117,7 @@ def main(args):
 
 if __name__ == "__main__":
 		parser = argparse.ArgumentParser(description=('Train RNN'))
-		parser.add_argument('--N',default = 10000, help='number of episodes to use to train')
+		parser.add_argument('--N',default = 1000, help='number of episodes to use to train')
 		parser.add_argument('--new_model', action='store_true', help='start a new model from scratch?')
 		parser.add_argument('--steps', default = 4000, help='how many rnn batches to train over')
 		parser.add_argument('--batch_size', default = 100, help='how many episodes in a batch?')
